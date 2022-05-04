@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const { STRING } = require('sequelize/types')
 
-const ProfileScheme = new mongoose.Schema({
+
+const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user'
@@ -111,4 +111,4 @@ const ProfileScheme = new mongoose.Schema({
   }
 })
 
-module.exports = Profile = mongoose.model('profile', Profile)
+module.exports = Profile = mongoose.model('profile', ProfileSchema)
